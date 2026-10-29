@@ -1,0 +1,18 @@
+{
+  "title": "Hermansyah — Web Developer & IT Graduate",
+  "description": "Portofolio Hermansyah, lulusan Teknologi Informasi dan web developer dari Bekasi. Lihat proyek web, pengalaman, keahlian, dan informasi kontak.",
+  "language": "id",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "favicon.svg"
+  },
+  "openGraph": {
+    "image": "og-cover.png"
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}

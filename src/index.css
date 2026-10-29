@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,700&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #f8f7ff;
+  color: #13111f;
+  font-family: 'Outfit', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+section {
+  scroll-margin-top: 68px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono-label {
+  font-family: 'DM Mono', monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lanyard-rig {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  h2.font-display {
+    font-size: clamp(2rem, 10vw, 2.5rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  h3.font-display {
+    font-size: clamp(1.25rem, 6vw, 1.5rem) !important;
+    line-height: 1.18 !important;
+  }
+
+  p {
+    text-align: left !important;
+    text-wrap: pretty;
+  }
+
+  .font-mono-label {
+    line-height: 1.5;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1.font-display {
+    font-size: clamp(2.1rem, 11vw, 2.6rem) !important;
+    line-height: 1 !important;
+  }
+
+  h2.font-display {
+    font-size: 2rem !important;
+  }
+
+  .font-mono-label {
+    letter-spacing: 0.08em !important;
+  }
+}
